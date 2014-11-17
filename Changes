@@ -1,5 +1,7 @@
 Revision history for Perl extension Types::Git.
 
 {{$NEXT}}
+
+0.01      2014-11-16
  - First release.
 
