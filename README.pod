@@ -1,0 +1,50 @@
+=pod
+
+=head1 NAME
+
+Types::Git - Type::Tiny types for git stuff.
+
+=head1 SYNOPSIS
+
+  package Foo;
+  
+  use Types::Git -types;
+  
+  use Moo;
+  use strictures 1;
+  use namespace::clean;
+  
+  has ref => (
+    is  => 'ro',
+    isa => GitRef,
+  );
+
+=head1 DESCRIPTION
+
+This module provides several (well, one, currently) L<Type::Tiny>
+types for several of git's data types.
+
+=head1 TYPES
+
+=head2 GitRef
+
+Matches a ref against the same rules that
+L<git-check-ref-format|http://git-scm.com/docs/git-check-ref-format> uses.
+
+=head1 AUTHOR
+
+Aran Clary Deltac <bluefeet@gmail.com>
+
+=head1 ACKNOWLEDGEMENTS
+
+Thanks to L<ZipRecruiter|https://www.ziprecruiter.com/>
+for encouraging their employees to contribute back to the open
+source ecosystem.  Without their dedication to quality software
+development this distribution would not exist.
+
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut
