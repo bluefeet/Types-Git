@@ -21,15 +21,52 @@ Types::Git - Type::Tiny types for git stuff.
 
 =head1 DESCRIPTION
 
-This module provides several (well, one, currently) L<Type::Tiny>
-types for several of git's data types.
+This module provides several L<Type::Tiny> types for some of
+git's data types.
 
 =head1 TYPES
+
+=head2 GitSHA
+
+A SHA1 hex, must be 40 characters or less long and contain
+only hex characters.
+
+=head2 GitLooseRef
+
+Just like L</GitRef> except one-level refs (those without any forward slashes)
+are allowed.  This is useful for validating a branch or tag name.
 
 =head2 GitRef
 
 Matches a ref against the same rules that
 L<git-check-ref-format|http://git-scm.com/docs/git-check-ref-format> uses.
+
+=head2 GitBranchRef
+
+A L</GitRef> which begins with C<refs/heads/> and ends with a
+L</GitLooseRef>.
+
+=head2 GitTagRef
+
+A L</GitRef> which begins with C<refs/tags/> and ends with a
+L</GitLooseRef>.
+
+=head2 GitObject
+
+This is a union type of L</GitSHA> and L</GitLooseRef>.  In the future
+this type may be expanded to include other types as more of
+L<gitrevisions|http://git-scm.com/docs/gitrevisions> is incorporated
+with this module.
+
+=head2 GitRevision
+
+Currenlty this is an alias for L</GitObject> but may be extended in
+the future to include other types as more of
+L<gitrevisions|http://git-scm.com/docs/gitrevisions> is incorporated
+with this module.
+
+This type is meant to be the same as L</GitObject> except with extended
+rules for date ranges and such.
 
 =head1 AUTHOR
 
