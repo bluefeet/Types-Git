@@ -1,6 +1,8 @@
 Revision history for Perl extension Types::Git.
 
 {{$NEXT}}
+
+0.03      2014-11-29
 - Declare List::MoreUtils dependency, thanks @andk.
   Resolves: https://github.com/bluefeet/Types-Git/issues/1
 
