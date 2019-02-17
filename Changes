@@ -1,6 +1,8 @@
-Revision history for Perl extension Types::Git.
+Revision history for Perl extension Types-Git.
 
 {{$NEXT}}
+
+ - Migrate build tooling from Dist::Zilla to Minilla.
 
 0.03      2014-11-29
 - Declare List::MoreUtils dependency, thanks @andk.
