@@ -33,7 +33,7 @@ use Type::Utils -all;
 use Types::Common::String -types;
 use List::MoreUtils qw( any );
 
-use strictures 1;
+use strictures 2;
 use namespace::clean;
 
 =head1 TYPES
