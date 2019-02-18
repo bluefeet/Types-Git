@@ -1,6 +1,6 @@
 package Types::Git;
 
-$Types::Git::VERSION = '0.03';
+$Types::Git::VERSION = '0.04';
 
 =head1 NAME
 
