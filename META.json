@@ -43,7 +43,7 @@
       "runtime" : {
          "requires" : {
             "List::MoreUtils" : "0.28",
-            "Type::Tiny" : "1",
+            "Type::Tiny" : "1.004000",
             "namespace::clean" : "0.24",
             "strictures" : "2.000000"
          }

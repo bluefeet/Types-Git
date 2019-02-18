@@ -1,5 +1,5 @@
-requires 'Type::Tiny' => 1;
-requires 'strictures'       => '2.000000';
+requires 'Type::Tiny' => '1.004000';
+requires 'strictures' => '2.000000';
 requires 'namespace::clean' => '0.24';
 requires 'List::MoreUtils' => 0.28;
 
