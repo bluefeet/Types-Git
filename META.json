@@ -45,6 +45,7 @@
             "List::MoreUtils" : "0.28",
             "Type::Tiny" : "1.004000",
             "namespace::clean" : "0.24",
+            "perl" : "5.008001",
             "strictures" : "2.000000"
          }
       },
