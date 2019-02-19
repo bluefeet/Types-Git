@@ -1,3 +1,4 @@
+requires 'perl' => '5.008001';
 requires 'Type::Tiny' => '1.004000';
 requires 'strictures' => '2.000000';
 requires 'namespace::clean' => '0.24';
