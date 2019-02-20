@@ -1,5 +1,6 @@
 package Types::Git;
-
+use 5.008001;
+use strictures 2;
 our $VERSION = '0.04';
 
 =head1 NAME
@@ -33,7 +34,6 @@ use Type::Utils -all;
 use Types::Common::String -types;
 use List::MoreUtils qw( any );
 
-use strictures 2;
 use namespace::clean;
 
 =head1 TYPES
